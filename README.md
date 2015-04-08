@@ -177,6 +177,7 @@ learningTree.printMaxGain()
 
 The conditions will filter the set to only contain observations where ‘Diagnosis’ is equal to ‘DGN3′. As we traverse down the tree we continue to add these conditions to represent the path that we took down to the leaf node. In the case below, the next node following the ‘Diagnosis’ node down branch ‘DGN3′ is the ‘SizeOfTumor’ attribute.
 
+```HTML
 <table>
 <tr>Calculating nodes for branch: DGN3</tr>
 <tr>Fields currently excluded as potential nodes: ['Risk1Y', 'Diagnosis']</tr>
@@ -217,3 +218,4 @@ The conditions will filter the set to only contain observations where ‘Diagnos
 <tr>Entropy of given set is: 0.538515706679</tr>
 <tr>Attribute with maximum gain is: {‘name’: ‘SizeOfTumor’, ‘gain’: 0.025857029330573714}</tr>
 </table>
+```

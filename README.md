@@ -1,3 +1,6 @@
+decisiontree
+============
+
 One of the machine learning methods used in predictive statistics is the “learning decision tree”. A decision tree is used to predict an outcome from a set of observations based on the set of values present in each observation. A decision tree is much like that little pinball-like machine you may have seen on “The Price is Right”, however, while the path of the little disk in that show was entirely random, the path formed by a decision tree is not random, it is formed through an application of statistical probability. A decision tree “learns” the path for each outcome variable from the set of data that it is built from.
 
 In order to understand how this works, one needs to understand two concepts in information science. These concepts are information gain, and entropy.

@@ -1,6 +1,9 @@
 decisiontree
 ============
 
+Background
+----------
+
 One of the machine learning methods used in predictive statistics is the “learning decision tree”. A decision tree is used to predict an outcome from a set of observations based on the set of values present in each observation. A decision tree is much like that little pinball-like machine you may have seen on “The Price is Right”, however, while the path of the little disk in that show was entirely random, the path formed by a decision tree is not random, it is formed through an application of statistical probability. A decision tree “learns” the path for each outcome variable from the set of data that it is built from.
 
 In order to understand how this works, one needs to understand two concepts in information science. These concepts are information gain, and entropy.
@@ -35,6 +38,9 @@ While a full blown implementation of this algorithm would implement the recursio
 I’ve decided to use a dataset from UCI’s machine learning repository. The dataset contains data on 470 surgeries that occurred on patients suffering from lung cancer. The outcome variable is whether or not the patient dies within one year of receiving the surgery (‘Risk1Y’) and the variables are various attributes of the patient and their illness, including age, diagnosis, tumor size, the outcomes of various pulmonary function tests, whether the patient smokes, whether they experienced a cough before surgery, and more. The full dataset can be found here:
 
 https://archive.ics.uci.edu/ml/datasets/Thoracic+Surgery+Data
+
+The Algorithm:  Step-by-step using the DecisionTree class
+---------------------------------------------------------
 
 The first step in the algorithm is to calculate the entropy of the entire set of data with respect to the outcome variable (‘Risk1Y’). Since we are using a binary classification (the patient either died or lived), we can use the formula to calculate entropy for a binary classification:
 

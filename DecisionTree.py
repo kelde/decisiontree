@@ -5,7 +5,7 @@ from itertools import *
 import operator
 import numpy
 
-class InteractiveDecisionTree:
+class DecisionTree:
 	
 	def __init__(self, filePath, outcomeField):
 		self.filePath = filePath

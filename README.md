@@ -81,35 +81,37 @@ Remember, at this point we are processing the entire set of data (all 470 record
 
 Let’s get a little more output to see how this works. Below is the additional output from the getHighestGain() method for the first attribute processed:
 
-Total records in set: 470.0
-Field is: Diagnosis
-Total number with value DGN1: 1
-Total number with value DGN1 and outcome F: 1
-Entropy of the set with value: DGN1: 0.0
-Total number with value DGN2: 52
-Total number with value DGN2 and outcome F: 40
-Total number with value DGN2 and outcome T: 12
-Entropy of the set with value: DGN2: 0.779349837292
-Total number with value DGN3: 349
-Total number with value DGN3 and outcome F: 306
-Total number with value DGN3 and outcome T: 43
-Entropy of the set with value: DGN3: 0.538515706679
-Total number with value DGN4: 47
-Total number with value DGN4 and outcome F: 40
-Total number with value DGN4 and outcome T: 7
-Entropy of the set with value: DGN4: 0.607171654871
-Total number with value DGN5: 15
-Total number with value DGN5 and outcome F: 8
-Total number with value DGN5 and outcome T: 7
-Entropy of the set with value: DGN5: 0.996791631982
-Total number with value DGN6: 4
-Total number with value DGN6 and outcome F: 4
-Entropy of the set with value: DGN6: 0.0
-Total number with value DGN8: 2
-Total number with value DGN8 and outcome F: 1
-Total number with value DGN8 and outcome T: 1
-Entropy of the set with value: DGN8: 1.0
-Gain for this attribute: 0.0242841752354
+<table>
+<tr>Total records in set: 470.0</tr>
+<tr>Field is: Diagnosis</tr>
+<tr>Total number with value DGN1: 1</tr>
+<tr>Total number with value DGN1 and outcome F: 1</tr>
+<tr>Entropy of the set with value: DGN1: 0.0</tr>
+<tr>Total number with value DGN2: 52</tr>
+<tr>Total number with value DGN2 and outcome F: 40</tr>
+<tr>Total number with value DGN2 and outcome T: 12</tr>
+<tr>Entropy of the set with value: DGN2: 0.779349837292</tr>
+<tr>Total number with value DGN3: 349</tr>
+<tr>Total number with value DGN3 and outcome F: 306</tr>
+<tr>Total number with value DGN3 and outcome T: 43</tr>
+<tr>Entropy of the set with value: DGN3: 0.538515706679</tr>
+<tr>Total number with value DGN4: 47</tr>
+<tr>Total number with value DGN4 and outcome F: 40</tr>
+<tr>Total number with value DGN4 and outcome T: 7</tr>
+<tr>Entropy of the set with value: DGN4: 0.607171654871</tr>
+<tr>Total number with value DGN5: 15</tr>
+<tr>Total number with value DGN5 and outcome F: 8</tr>
+<tr>Total number with value DGN5 and outcome T: 7</tr>
+<tr>Entropy of the set with value: DGN5: 0.996791631982</tr>
+<tr>Total number with value DGN6: 4</tr>
+<tr>Total number with value DGN6 and outcome F: 4</tr>
+<tr>Entropy of the set with value: DGN6: 0.0</tr>
+<tr>Total number with value DGN8: 2</tr>
+<tr>Total number with value DGN8 and outcome F: 1</tr>
+<tr>Total number with value DGN8 and outcome T: 1</tr>
+<tr>Entropy of the set with value: DGN8: 1.0</tr>
+<tr>Gain for this attribute: 0.0242841752354</tr>
+</table>
 
 We can see from this (knowing the calculation for gain) that the final formula for information gain for this attribute would be:
 
@@ -117,39 +119,41 @@ Gain(S,A)=0.607171654871−(1/470)(0)−(52/470)(0.779349837292)−(349/470)(0.5
 
 Now we find the attribute with the maximum gain:
 
-Attribute is: Diagnosis
-Gain for this attribute: 0.0242841752354
-Attribute is: FVC
-Gain for this attribute: 0.0203096548951
-Attribute is: FEV1
-Gain for this attribute: 0.00305944453271
-Attribute is: PerformanceStatus
-Gain for this attribute: 0.00652051279898
-Attribute is: Pain
-Gain for this attribute: 0.00212629826488
-Attribute is: Haemoptyisis
-Gain for this attribute: 0.00289481096538
-Attribute is: Dyspnoea
-Gain for this attribute: 0.0067109933434
-Attribute is: Cough
-Gain for this attribute: 0.00603793299662
-Attribute is: Weakness
-Gain for this attribute: 0.00495240811225
-Attribute is: SizeOfTumor
-Gain for this attribute: 0.0209567260041
-Attribute is: Diabetes
-Gain for this attribute: 0.00720382164832
-Attribute is: MI
-Gain for this attribute: 0.000992338695742
-Attribute is: PAD
-Gain for this attribute: 0.000868693043524
-Attribute is: Smokes
-Gain for this attribute: 0.00600290579821
-Attribute is: Asthma
-Gain for this attribute: 0.000992338695742
-Attribute is: Age
-Gain for this attribute: 0.0036530835234
-Attribute with maximum gain is: {‘name’: ‘Diagnosis’, ‘gain’: 0.024284175235364205}
+<table>
+<tr>Attribute is: Diagnosis</tr>
+<tr>Gain for this attribute: 0.0242841752354</tr>
+<tr>Attribute is: FVC</tr>
+<tr>Gain for this attribute: 0.0203096548951</tr>
+<tr>Attribute is: FEV1</tr>
+<tr>Gain for this attribute: 0.00305944453271</tr>
+<tr>Attribute is: PerformanceStatus</tr>
+<tr>Gain for this attribute: 0.00652051279898</tr>
+<tr>Attribute is: Pain</tr>
+<tr>Gain for this attribute: 0.00212629826488</tr>
+<tr>Attribute is: Haemoptyisis</tr>
+<tr>Gain for this attribute: 0.00289481096538</tr>
+<tr>Attribute is: Dyspnoea</tr>
+<tr>Gain for this attribute: 0.0067109933434</tr>
+<tr>Attribute is: Cough</tr>
+<tr>Gain for this attribute: 0.00603793299662</tr>
+<tr>Attribute is: Weakness</tr>
+<tr>Gain for this attribute: 0.00495240811225</tr>
+<tr>Attribute is: SizeOfTumor</tr>
+<tr>Gain for this attribute: 0.0209567260041</tr>
+<tr>Attribute is: Diabetes</tr>
+<tr>Gain for this attribute: 0.00720382164832</tr>
+<tr>Attribute is: MI</tr>
+<tr>Gain for this attribute: 0.000992338695742</tr>
+<tr>Attribute is: PAD</tr>
+<tr>Gain for this attribute: 0.000868693043524</tr>
+<tr>Attribute is: Smokes</tr>
+<tr>Gain for this attribute: 0.00600290579821</tr>
+<tr>Attribute is: Asthma</tr>
+<tr>Gain for this attribute: 0.000992338695742</tr>
+<tr>Attribute is: Age</tr>
+<tr>Gain for this attribute: 0.0036530835234</tr>
+<tr>Attribute with maximum gain is: {‘name’: ‘Diagnosis’, ‘gain’: 0.024284175235364205}</tr>
+</table>
 
 Out of all of the available attributes, the maximum gain is for the Diagnosis variable. We therefore set this attribute as the root node and we get all of the possible values for this attribute.
 
@@ -173,42 +177,43 @@ learningTree.printMaxGain()
 
 The conditions will filter the set to only contain observations where ‘Diagnosis’ is equal to ‘DGN3′. As we traverse down the tree we continue to add these conditions to represent the path that we took down to the leaf node. In the case below, the next node following the ‘Diagnosis’ node down branch ‘DGN3′ is the ‘SizeOfTumor’ attribute.
 
-Calculating nodes for branch: DGN3
-Fields currently excluded as potential nodes: ['Risk1Y', 'Diagnosis']
-Conditions placed on current set:
-[{'name': 'Diagnosis', 'value': 'DGN3'}]
-Attribute is: FVC
-Gain for this attribute: 0.0178882581378
-Attribute is: FEV1
-Gain for this attribute: 0.00440246814813
-Attribute is: PerformanceStatus
-Gain for this attribute: 0.00889217478759
-Attribute is: Pain
-Gain for this attribute: 0.0119114583755
-Attribute is: Haemoptyisis
-Gain for this attribute: 0.00515530395553
-Attribute is: Dyspnoea
-Gain for this attribute: 0.00720521042675
-Attribute is: Cough
-Gain for this attribute: 0.00429029313854
-Attribute is: Weakness
-Gain for this attribute: 0.0032716018855
-Attribute is: SizeOfTumor
-Gain for this attribute: 0.0258570293306
-Attribute is: Diabetes
-Gain for this attribute: 0.00582417248134
-Attribute is: MI
-Gain for this attribute: 0.00109042213585
-Attribute is: PAD
-Gain for this attribute: 0.00273871968586
-Attribute is: Smokes
-Gain for this attribute: 0.00443986103654
-Attribute is: Asthma
-Gain for this attribute: 0.00109042213585
-Attribute is: Age
-Gain for this attribute: 0.0032465590173
-Positive outcomes in given set: 43.0
-Negative outcomes in given set: 306.0
-Entropy of given set is: 0.538515706679
-Attribute with maximum gain is: {‘name’: ‘SizeOfTumor’, ‘gain’: 0.025857029330573714}
-
+<table>
+<tr>Calculating nodes for branch: DGN3</tr>
+<tr>Fields currently excluded as potential nodes: ['Risk1Y', 'Diagnosis']</tr>
+<tr>Conditions placed on current set:</tr>
+<tr>[{'name': 'Diagnosis', 'value': 'DGN3'}]</tr>
+<tr>Attribute is: FVC</tr>
+<tr>Gain for this attribute: 0.0178882581378</tr>
+<tr>Attribute is: FEV1</tr>
+<tr>Gain for this attribute: 0.00440246814813</tr>
+<tr>Attribute is: PerformanceStatus</tr>
+<tr>Gain for this attribute: 0.00889217478759</tr>
+<tr>Attribute is: Pain</tr>
+<tr>Gain for this attribute: 0.0119114583755</tr>
+<tr>Attribute is: Haemoptyisis</tr>
+<tr>Gain for this attribute: 0.00515530395553</tr>
+<tr>Attribute is: Dyspnoea</tr>
+<tr>Gain for this attribute: 0.00720521042675</tr>
+<tr>Attribute is: Cough</tr>
+<tr>Gain for this attribute: 0.00429029313854</tr>
+<tr>Attribute is: Weakness</tr>
+<tr>Gain for this attribute: 0.0032716018855</tr>
+<tr>Attribute is: SizeOfTumor</tr>
+<tr>Gain for this attribute: 0.0258570293306</tr>
+<tr>Attribute is: Diabetes</tr>
+<tr>Gain for this attribute: 0.00582417248134</tr>
+<tr>Attribute is: MI</tr>
+<tr>Gain for this attribute: 0.00109042213585</tr>
+<tr>Attribute is: PAD</tr>
+<tr>Gain for this attribute: 0.00273871968586</tr>
+<tr>Attribute is: Smokes</tr>
+<tr>Gain for this attribute: 0.00443986103654</tr>
+<tr>Attribute is: Asthma</tr>
+<tr>Gain for this attribute: 0.00109042213585</tr>
+<tr>Attribute is: Age</tr>
+<tr>Gain for this attribute: 0.0032465590173</tr>
+<tr>Positive outcomes in given set: 43.0</tr>
+<tr>Negative outcomes in given set: 306.0</tr>
+<tr>Entropy of given set is: 0.538515706679</tr>
+<tr>Attribute with maximum gain is: {‘name’: ‘SizeOfTumor’, ‘gain’: 0.025857029330573714}</tr>
+</table>

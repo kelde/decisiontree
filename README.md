@@ -85,33 +85,21 @@ Let’s get a little more output to see how this works. Below is the additional 
 | ------ |
 |Total records in set: 470.0|
 |Field is: Diagnosis|
-|Total number with value DGN1: 1
-Total number with value DGN1 and outcome F: 1
-Entropy of the set with value: DGN1: 0.0|
-|Total number with value DGN2: 52
-Total number with value DGN2 and outcome F: 40
-Total number with value DGN2 and outcome T: 12
-Entropy of the set with value: DGN2: 0.779349837292|
-|Total number with value DGN3: 349
-Total number with value DGN3 and outcome F: 306
-Total number with value DGN3 and outcome T: 43
-Entropy of the set with value: DGN3: 0.538515706679|
-|Total number with value DGN4: 47
-Total number with value DGN4 and outcome F: 40
-Total number with value DGN4 and outcome T: 7
-Entropy of the set with value: DGN4: 0.607171654871|
-|Total number with value DGN5: 15
-Total number with value DGN5 and outcome F: 8
-Total number with value DGN5 and outcome T: 7
-Entropy of the set with value: DGN5: 0.996791631982|
-|Total number with value DGN6: 4
-Total number with value DGN6 and outcome F: 4
-Entropy of the set with value: DGN6: 0.0|
-|Total number with value DGN8: 2
-Total number with value DGN8 and outcome F: 1
-Total number with value DGN8 and outcome T: 1
-Entropy of the set with value: DGN8: 1.0
-Gain for this attribute: 0.0242841752354|
+|Total number with value DGN1: 1; Total number with value DGN1 and outcome F: 1|
+|Entropy of the set with value: DGN1: 0.0|
+|Total number with value DGN2: 52; Total number with value DGN2 and outcome F: 40; Total number with value DGN2 and outcome T: 12|
+|Entropy of the set with value: DGN2: 0.779349837292|
+|Total number with value DGN3: 349; Total number with value DGN3 and outcome F: 306; Total number with value DGN3 and outcome T: 43|
+|Entropy of the set with value: DGN3: 0.538515706679|
+|Total number with value DGN4: 47; Total number with value DGN4 and outcome F: 40; Total number with value DGN4 and outcome T: 7|
+|Entropy of the set with value: DGN4: 0.607171654871|
+|Total number with value DGN5: 15; Total number with value DGN5 and outcome F: 8; Total number with value DGN5 and outcome T: 7|
+|Entropy of the set with value: DGN5: 0.996791631982|
+|Total number with value DGN6: 4; Total number with value DGN6 and outcome F: 4|
+|Entropy of the set with value: DGN6: 0.0|
+|Total number with value DGN8: 2; Total number with value DGN8 and outcome F: 1; Total number with value DGN8 and outcome T: 1|
+|Entropy of the set with value: DGN8: 1.0|
+|Gain for this attribute: 0.0242841752354|
 
 We can see from this (knowing the calculation for gain) that the final formula for information gain for this attribute would be:
 
@@ -121,38 +109,22 @@ Now we find the attribute with the maximum gain:
 
 | Output |
 | ------ |
-|Attribute is: Diagnosis
-|Gain for this attribute: 0.0242841752354|
-|Attribute is: FVC
-Gain for this attribute: 0.0203096548951|
-|Attribute is: FEV1
-Gain for this attribute: 0.00305944453271|
-|Attribute is: PerformanceStatus
-Gain for this attribute: 0.00652051279898|
-|Attribute is: Pain
-Gain for this attribute: 0.00212629826488|
-|Attribute is: Haemoptyisis
-Gain for this attribute: 0.00289481096538|
-|Attribute is: Dyspnoea
-Gain for this attribute: 0.0067109933434|
-|Attribute is: Cough
-Gain for this attribute: 0.00603793299662|
-|Attribute is: Weakness
-Gain for this attribute: 0.00495240811225|
-|Attribute is: SizeOfTumor
-Gain for this attribute: 0.0209567260041|
-|Attribute is: Diabetes
-Gain for this attribute: 0.00720382164832|
-|Attribute is: MI
-Gain for this attribute: 0.000992338695742|
-|Attribute is: PAD
-Gain for this attribute: 0.000868693043524|
-|Attribute is: Smokes
-Gain for this attribute: 0.00600290579821|
-|Attribute is: Asthma
-Gain for this attribute: 0.000992338695742|
-|Attribute is: Age
-Gain for this attribute: 0.0036530835234|
+|Attribute is: Diagnosis; Gain for this attribute: 0.0242841752354|
+|Attribute is: FVC; Gain for this attribute: 0.0203096548951|
+|Attribute is: FEV1; Gain for this attribute: 0.00305944453271|
+|Attribute is: PerformanceStatus; Gain for this attribute: 0.00652051279898|
+|Attribute is: Pain; Gain for this attribute: 0.00212629826488|
+|Attribute is: Haemoptyisis; Gain for this attribute: 0.00289481096538|
+|Attribute is: Dyspnoea; Gain for this attribute: 0.0067109933434|
+|Attribute is: Cough; Gain for this attribute: 0.00603793299662|
+|Attribute is: Weakness; Gain for this attribute: 0.00495240811225|
+|Attribute is: SizeOfTumor; Gain for this attribute: 0.0209567260041|
+|Attribute is: Diabetes; Gain for this attribute: 0.00720382164832|
+|Attribute is: MI; Gain for this attribute: 0.000992338695742|
+|Attribute is: PAD; Gain for this attribute: 0.000868693043524|
+|Attribute is: Smokes; Gain for this attribute: 0.00600290579821|
+|Attribute is: Asthma; Gain for this attribute: 0.000992338695742|
+|Attribute is: Age; Gain for this attribute: 0.0036530835234|
 |Attribute with maximum gain is: {‘name’: ‘Diagnosis’, ‘gain’: 0.024284175235364205}|
 
 Out of all of the available attributes, the maximum gain is for the Diagnosis variable. We therefore set this attribute as the root node and we get all of the possible values for this attribute.

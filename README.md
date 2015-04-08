@@ -177,45 +177,43 @@ learningTree.printMaxGain()
 
 The conditions will filter the set to only contain observations where ‘Diagnosis’ is equal to ‘DGN3′. As we traverse down the tree we continue to add these conditions to represent the path that we took down to the leaf node. In the case below, the next node following the ‘Diagnosis’ node down branch ‘DGN3′ is the ‘SizeOfTumor’ attribute.
 
-```HTML
-<table>
-<tr>Calculating nodes for branch: DGN3</tr>
-<tr>Fields currently excluded as potential nodes: ['Risk1Y', 'Diagnosis']</tr>
-<tr>Conditions placed on current set:</tr>
-<tr>[{'name': 'Diagnosis', 'value': 'DGN3'}]</tr>
-<tr>Attribute is: FVC</tr>
-<tr>Gain for this attribute: 0.0178882581378</tr>
-<tr>Attribute is: FEV1</tr>
-<tr>Gain for this attribute: 0.00440246814813</tr>
-<tr>Attribute is: PerformanceStatus</tr>
-<tr>Gain for this attribute: 0.00889217478759</tr>
-<tr>Attribute is: Pain</tr>
-<tr>Gain for this attribute: 0.0119114583755</tr>
-<tr>Attribute is: Haemoptyisis</tr>
-<tr>Gain for this attribute: 0.00515530395553</tr>
-<tr>Attribute is: Dyspnoea</tr>
-<tr>Gain for this attribute: 0.00720521042675</tr>
-<tr>Attribute is: Cough</tr>
-<tr>Gain for this attribute: 0.00429029313854</tr>
-<tr>Attribute is: Weakness</tr>
-<tr>Gain for this attribute: 0.0032716018855</tr>
-<tr>Attribute is: SizeOfTumor</tr>
-<tr>Gain for this attribute: 0.0258570293306</tr>
-<tr>Attribute is: Diabetes</tr>
-<tr>Gain for this attribute: 0.00582417248134</tr>
-<tr>Attribute is: MI</tr>
-<tr>Gain for this attribute: 0.00109042213585</tr>
-<tr>Attribute is: PAD</tr>
-<tr>Gain for this attribute: 0.00273871968586</tr>
-<tr>Attribute is: Smokes</tr>
-<tr>Gain for this attribute: 0.00443986103654</tr>
-<tr>Attribute is: Asthma</tr>
-<tr>Gain for this attribute: 0.00109042213585</tr>
-<tr>Attribute is: Age</tr>
-<tr>Gain for this attribute: 0.0032465590173</tr>
-<tr>Positive outcomes in given set: 43.0</tr>
-<tr>Negative outcomes in given set: 306.0</tr>
-<tr>Entropy of given set is: 0.538515706679</tr>
-<tr>Attribute with maximum gain is: {‘name’: ‘SizeOfTumor’, ‘gain’: 0.025857029330573714}</tr>
-</table>
-```
+| Output |
+| ------ |
+|Calculating nodes for branch: DGN3|
+|Fields currently excluded as potential nodes: ['Risk1Y', 'Diagnosis']|
+|Conditions placed on current set:|
+|[{'name': 'Diagnosis', 'value': 'DGN3'}]|
+|Attribute is: FVC|
+|Gain for this attribute: 0.0178882581378|
+|Attribute is: FEV1|
+|Gain for this attribute: 0.00440246814813|
+|Attribute is: PerformanceStatus|
+|Gain for this attribute: 0.00889217478759|
+|Attribute is: Pain|
+|Gain for this attribute: 0.0119114583755|
+|Attribute is: Haemoptyisis|
+|Gain for this attribute: 0.00515530395553|
+|Attribute is: Dyspnoea|
+|Gain for this attribute: 0.00720521042675|
+|Attribute is: Cough|
+|Gain for this attribute: 0.00429029313854|
+|Attribute is: Weakness|
+|Gain for this attribute: 0.0032716018855|
+|Attribute is: SizeOfTumor|
+|Gain for this attribute: 0.0258570293306|
+|Attribute is: Diabetes|
+|Gain for this attribute: 0.00582417248134|
+|Attribute is: MI|
+|Gain for this attribute: 0.00109042213585|
+|Attribute is: PAD|
+|Gain for this attribute: 0.00273871968586|
+|Attribute is: Smokes|
+|Gain for this attribute: 0.00443986103654|
+|Attribute is: Asthma|
+|Gain for this attribute: 0.00109042213585|
+|Attribute is: Age|
+|Gain for this attribute: 0.0032465590173|
+|Positive outcomes in given set: 43.0|
+|Negative outcomes in given set: 306.0|
+|Entropy of given set is: 0.538515706679|
+|Attribute with maximum gain is: {‘name’: ‘SizeOfTumor’, ‘gain’: 0.025857029330573714}|

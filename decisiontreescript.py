@@ -1,4 +1,4 @@
 #! /usr/bin/python
-from DecisionTree import *
+from InteractiveDecisionTree import *
 
-decisionTree = DecisionTree('thoracic_surgery.csv')
+decisionTree = InteractiveDecisionTree('thoracic_surgery.csv')

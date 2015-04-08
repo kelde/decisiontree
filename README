@@ -40,6 +40,7 @@ Where p+ is the proportion of outcomes for which the value is positive (i.e. the
 
 To do this using the python class:
 
+```python
 learningTree = DecisionTree("/Users/kelder86/decision_tree/thoracic_surgery.csv", "Risk1Y")
 learningTree.setFieldNames(['Diagnosis', 'FVC', 'FEV1', 'PerformanceStatus', 'Pain', 'Haemoptyisis', 'Dyspnoea', 'Cough', 'Weakness', 'SizeOfTumor', 'Diabetes', 'MI', 'PAD', 'Smokes', 'Asthma', 'Age', 'Risk1Y'])
 learningTree.loadFile()
@@ -48,6 +49,8 @@ learningTree.printSetConditions()
 learningTree.setCurrentSet()
 learningTree.calculateSetEntropy()
 learningTree.printEntropy()
+```
+
 This gives us the following output:
 
 Positive outcomes in given set: 70.0
@@ -65,8 +68,10 @@ To calculate information gain for a binary classification problem, we use the fo
 Gain(S,A)=Entropy(S)−∑v∈Values(v)(Sv/S)Entropy(Sv)
 To do this with the class, we do the following:
 
+```python
 learningTree.getHighestGain()
 learningTree.printMaxGain()
+```
 
 This produces the following output:
 
@@ -148,19 +153,23 @@ Attribute with maximum gain is: {‘name’: ‘Diagnosis’, ‘gain’: 0.0242
 
 Out of all of the available attributes, the maximum gain is for the Diagnosis variable. We therefore set this attribute as the root node and we get all of the possible values for this attribute.
 
+```python
 learningTree.setNodeBranches('Diagnosis')
 learningTree.printBranches()
 ['DGN8', 'DGN1', 'DGN3', 'DGN2', 'DGN5', 'DGN4', 'DGN6']
+```
 
 These are the possible values of diagnosis. Now in a fully recursive implementation, the process would then cycle through each one of these branches, setting a node for each branch, and performing all of the calculations until the tree is exhausted. In our case we are going to manually traverse just one more level down for explanation.
 
 We first need to calculate the new set for the branch. We can do this by excluding the values that we have already used by traversing the branch from the total set. For example, to calculate Sv for the DGN3 branch:
 
+```python
 learningTree.setSetConditions([{ 'name' : 'Diagnosis', 'value' : 'DGN3' }])
 learningTree.setExcludedFields(['Risk1Y', 'Diagnosis'])
 learningTree.processBranch('DGN3')
 learningTree.printEntropy()
 learningTree.printMaxGain()
+```
 
 The conditions will filter the set to only contain observations where ‘Diagnosis’ is equal to ‘DGN3′. As we traverse down the tree we continue to add these conditions to represent the path that we took down to the leaf node. In the case below, the next node following the ‘Diagnosis’ node down branch ‘DGN3′ is the ‘SizeOfTumor’ attribute.
 
